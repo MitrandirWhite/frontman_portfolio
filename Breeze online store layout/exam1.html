@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <title>Exam1</title>
+        <!--    Slick    -->
+        <link rel="stylesheet" href="style/slick.css"/>
+        <link rel="stylesheet" href="style/slick-theme.css"/>
+        <!--    ///Slick    -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"/>
+        <link rel="stylesheet" href="style/style.css"/>
+        
+    </head>
+    <body>
+       <main>
+            <!--     ШАПКА      -->
+            <header>
+              <div class="above_bar">
+                   <div class="lineset">
+                        <div class="frst_line"></div>
+                        <div class="scnd_line"></div>
+                        <div class="thrd_line"></div>
+                   </div>
+                   <div class="container clearfix">
+                       <div class="row">
+                            <div class="tel"><i class="fa fa-phone" aria-hidden="true"></i> Call Us +777 (100) 1234</div>
+                            <div class="welcome">
+                                <span>Welcome visitor you can</span>
+                                <a href="#" class="logreg">login</a>
+                                <span>or</span>
+                                <a href="#" class="logreg">create an account</a>
+                            </div>
+                            <div class="switchets clearfix">
+                                <div class="currency">
+                                  <button id="drop_current" type="button" class="switch">
+                                      <i class="fa fa-globe" aria-hidden="true"></i>
+                                  </button>
+                                   <ul class="switch_list clearfix">
+                                        <li><a href="#" class="on">$</a></li>
+                                        <li><a href="#">€</a></li>
+                                        <li><a href="#">£</a></li>
+                                    </ul>
+                                </div>
+                                <div class="language">
+                                   <button id="drop_lang" type="button" class="switch">
+                                       <i class="fa fa-usd" aria-hidden="true"></i>
+                                   </button>
+                                    <ul class="switch_list clearfix">
+                                        <li><a href="#" class="on">EN</a></li>
+                                        <li><a href="#">FR</a></li>
+                                        <li><a href="#">GM</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="under_bar">
+                   <div class="container clearfix">
+                      <div class="row">
+                           <div class="under_bar_inner">
+                                <div class="logo_box"><a class="logo" href="#"><img src="images/logo.png" alt=""></a></div>
+                                <div class="search_div">
+                                    <form action="" method="" class="search_form clearfix">
+                                        <input type="text" placeholder="Search entire store here..." class="search_field"/>
+                                        <button class="search_btn"><i class="fa fa-search search_icon" aria-hidden="true"></i></button>
+                                    </form>
+                                </div>
+                                <nav class="user_nav">
+                                    <ul class="clearfix">
+                                        <li><a href="#">My Account</a></li>
+                                        <li><a href="#">My Wishlist</a></li>
+                                        <li><a href="#">Log In</a></li>
+                                        <li><a href="#">Sign Up</a></li>
+                                        <li class="shopping_cart"><a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Cart $0.00</a></li> 
+                                    </ul>
+                                </nav>
+                                <nav class="user_nav user_nav_tabl">
+                                    <ul class="clearfix">
+                                        <li class="user_btn">
+                                            <a href="#"><i class="fa fa-user" aria-hidden="true"></i></a>
+                                            <ul class="submenu user_submenu">
+                                                <li><a href="#">My Account</a></li>
+                                                <li><a href="#">My Wishlist</a></li>
+                                                <li><a href="#">Log In</a></li>
+                                                <li><a href="#">Sign Up</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="shopping_cart"><a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Cart $0.00</a></li> 
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </header>
+            <!--     //ШАПКА      -->
+            
+            
+            <!--      КОНТЕНТ      -->
+            <div class="container">
+               <div class="row">
+                <!--  *Главное меню*  -->
+                <nav class="content_nav clearfix">
+                    <ul class="clearfix">
+                        <li class="home_menu_item"><a href="#" class="on">HOME</a></li>
+                        <li class="home_menu_item"><a href="#">SOLIDS</a></li>
+                        <li class="home_menu_item"><a href="#">LIQUIDS</a></li>
+                        <li class="home_menu_item">
+                            <a href="#">SPRAY</a>
+                            <ul class="submenu">
+                                <li><a href="#">For home</a></li>
+                                <li><a href="#">For garden</a></li>
+                                <li><a href="#">For car</a></li>
+                                <li><a href="#">Other spray</a></li>
+                            </ul>
+                        </li>
+                        <li class="home_menu_item"><a href="#">ELECTRIC</a></li>
+                        <li class="home_menu_item"><a href="#">FOR CARS</a></li>
+                    </ul>
+                </nav>
+                <div class="btn-group home_menu_btn">
+                    <button type="button" class="menu_drop dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="ion-navicon-round"></span>
+                    </button>
+                    <ul class="dropdown-menu btn_submenu">
+                        <li class=""><a href="#" class="on">HOME</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li class=""><a href="#">SOLIDS</a></li>
+                        <li class=""><a href="#">LIQUIDS</a></li>
+                        <li class="dropdown-submenu">
+                                <a class="drop_submenu" href="#">SPRAY <span class="caret"></span></a>
+                              
+                              <ul class="dropdown-menu btn_submenu">
+                                <li><a href="#">For home</a></li>
+                                <li><a href="#">For garden</a></li>
+                                <li><a href="#">For car</a></li>
+                                <li><a href="#">Other spray</a></li>
+                              </ul>    
+                        </li>
+                        <li class=""><a href="#">ELECTRIC</a></li>
+                        <li class=""><a href="#">FOR CARS</a></li>
+                    </ul>
+                </div>
+                <!--  //*Главное меню*  -->
+                <div class="content_box clearfix">
+                   <!--  *Главный слайдер*  -->
+                   <div class="main_slider">
+                       <div class="slide_item">
+                           <a href="#"><img src="images/mainslider.jpg" alt="Картинка" class="slider_img"/></a>
+                           <div class="slider_desc">
+                               <span class="sd_title">Breeze Noticeables</span>
+                               <span class="sd_anno">The new series of natural  air fresheners.</span>
+                               <span class="sd_anno">Febreze Noticeables Meadows & Rain</span>
+                               <span class="sd_anno">Air Freshener Refill.</span>
+                           </div>
+                       </div>
+                       <div class="slide_item">
+                           <a href="#"><img src="images/mainslider2.jpg" alt="Картинка" class="slider_img"/></a>
+                           <div class="slider_desc">
+                               <span class="sd_title">Gugugugu</span>
+                               <span class="sd_anno">The new series of natural  air fresheners.</span>
+                               <span class="sd_anno">Febreze Noticeables Meadows & Rain</span>
+                               <span class="sd_anno">Air Freshener Refill.</span>
+                           </div>
+                       </div>
+
+                   </div>
+                   <!--  //*Главный слайдер*  -->
+                   <div class="us_boxes_div clearfix">
+                       <div class="under_slider_boxes clearfix">
+                           <div class="us_img">
+                               <img src="images/sale.png" alt="Here must be image"/>
+                           </div>
+                           <div class="us_desc">
+                              <div class="us_desc_inner">
+                                  <span class="us_slide_title overflow_defend">Best price</span>
+                                  <span class="us_slide_anno overflow_defend">this week</span>
+                              </div>
+                           </div>
+                       </div>
+                       <div class="under_slider_boxes clearfix under_slider_centr_box">
+                           <div class="us_img">
+                               <img src="images/NewSmells.png" alt="Here must be image"/>
+                           </div>
+                           <div class="us_desc">
+                              <div class="us_desc_inner">
+                                  <span class="us_slide_title overflow_defend">New smells</span>
+                                  <span class="us_slide_anno overflow_defend">in the next series</span>
+                              </div>
+                           </div>
+                       </div>
+                       <div class="under_slider_boxes clearfix">
+                           <div class="us_img">
+                               <img src="images/Shtrih.png" alt="Here must be image"/>
+                           </div>
+                           <div class="us_desc">
+                              <div class="us_desc_inner">
+                                  <span class="us_slide_title overflow_defend">Only natural</span>
+                                  <span class="us_slide_anno overflow_defend">air fresheners</span>
+                              </div>
+                           </div>
+                        </div>
+                   </div>
+                   <!--  *Слайдеры продукции*  -->
+                   <div class="content_sliders">
+                      <!-- **Хиты продаж** -->
+                       <div class="c_sliders c_slider_first clearfix">
+                           <span class="cs_name">Best Sellers</span>
+                            <div class="c_slider_inner clearfix">  
+                              <div class="cs_prod_wrapper">
+                                  <div class="special_img_box">
+                                       <img src="images/SliderSale.png" alt="image" class="special_image"/>
+                                       <div class="cs_products">
+                                            <div class="product_image">
+                                                <a href="#"><img src="images/ProductsSlider1/Prd1.png" alt="Product image here" class="cs_product_images"/></a>
+                                            </div>   
+                                            <a href="#"><span class="cs_product_names">
+                                                Febreze Air Effects New Zealand Springs
+                                            </span></a>
+                                            <div class="product_tools clearfix">
+                                                <div class="product_prices clearfix">
+                                                <span class="actual_price">
+                                                    $550.00
+                                                </span>
+                                                <span class="old_price">
+                                                    $725.00
+                                                </span>
+                                                </div>
+                                                <div class="button_set">
+                                                    <button class="add_comparison"><i class="fa fa-exchange" aria-hidden="true"></i></button>
+                                                    <button class="add_wishlist"><i class="fa fa-heart" aria-hidden="true"></i></button>
+                                                    <button class="add_cart"><i class="fa fa-cart-plus" aria-hidden="true"></i></button>
+                                                </div>
+                                            </div>
+                                       </div>
+                                   </div>
+                               </div> 
+                               <div class="cs_prod_wrapper"> 
+                                   <div class="cs_products">
+                                        <img src="images/SliderSale.png" alt="image" class="special_image no_special_image"/>
+                                        <div class="product_image">
+                                            <a href="#"><img src="images/ProductsSlider1/Prd2.png" alt="Product image here" class="cs_product_images"/></a>
+                                        </div>   
+                                        <a href="#"><span class="cs_product_names">
+                                            Febreze Noticeables 2 Refills
+                                        </span></a>
+                                        <div class="product_tools clearfix">
+                                            <div class="product_prices clearfix">
+                                            <span class="actual_price no_old_actual">
+                                                $399.00
+                                            </span>
+                                            <span class="old_price no_old">
+                                                $725.00
+                                            </span>
+                                            </div>
+                                            <div class="button_set">
+                                                <button class="add_comparison"><i class="fa fa-exchange" aria-hidden="true"></i></button>
+                                                <button class="add_wishlist"><i class="fa fa-heart" aria-hidden="true"></i></button>
+                                                <button class="add_cart"><i class="fa fa-cart-plus" aria-hidden="true"></i></button>
+                                            </div>
+                                        </div>
+                                   </div>
+                               </div> 
+                               <div class="cs_prod_wrapper">
+                                     <div class="special_img_box">
+                                           <img src="images/SliderSale.png" alt="image" class="special_image"/> 
+                                           <div class="cs_products">
+                                                <div class="product_image">
+                                                    <a href="#"><img src="images/ProductsSlider1/Prd3.png" alt="Product image here" class="cs_product_images"/></a>
+                                                </div>   
+                                                <a href="#"><span class="cs_product_names">
+                                                    Beanpod Candles Orange Vanilla, Tea Light
+                                                </span></a>
+                                                <div class="product_tools clearfix">
+                                                    <div class="product_prices clearfix">
+                                                    <span class="actual_price">
+                                                        $330.00
+                                                    </span>
+                                                    <span class="old_price">
+                                                        $499.00
+                                                    </span>
+                                                    </div>
+                                                    <div class="button_set">
+                                                        <button class="add_comparison"><i class="fa fa-exchange" aria-hidden="true"></i></button>
+                                                        <button class="add_wishlist"><i class="fa fa-heart" aria-hidden="true"></i></button>
+                                                        <button class="add_cart"><i class="fa fa-cart-plus" aria-hidden="true"></i></button>
+                                                    </div>
+                                                </div>
+                                             </div>
+                                      </div>
+                               </div> 
+                               <div class="cs_prod_wrapper"> 
+                                   <div class="cs_products">
+                                        <img src="images/SliderSale.png" alt="image" class="special_image no_special_image"/>
+                                        <div class="product_image">
+                                            <a href="#"><img src="images/ProductsSlider1/Prd4.png" alt="Product image here" class="cs_product_images"/></a>
+                                        </div>   
+                                        <a href="#"><span class="cs_product_names">
+                                            Linen & Sky Air Freshener Refill
+                                        </span></a>
+                                        <div class="product_tools clearfix">
+                                            <div class="product_prices clearfix">
+                                            <span class="actual_price no_old_actual">
+                                                $173.00
+                                            </span>
+                                            <span class="old_price no_old">
+                                                $725.00
+                                            </span>
+                                            </div>
+                                            <div class="button_set">
+                                                <button class="add_comparison"><i class="fa fa-exchange" aria-hidden="true"></i></button>
+                                                <button class="add_wishlist"><i class="fa fa-heart" aria-hidden="true"></i></button>
+                                                <button class="add_cart"><i class="fa fa-cart-plus" aria-hidden="true"></i></button>
+                                            </div>
+                                        </div>
+                                   </div>
+                               </div> 
+                               <div class="cs_prod_wrapper">
+                                   <div class="special_img_box">
+                                       <img src="images/SliderSale.png" alt="image" class="special_image"/> 
+                                       <div class="cs_products">
+                                            <div class="product_image">
+                                                <a href="#"><img src="images/ProductsSlider2/Prd5.png" alt="Product image here" class="cs_product_images"/></a>
+                                            </div>   
+                                            <a href="#"><span class="cs_product_names">
+                                                Air Wick Scented Oil Warmer
+                                            </span></a>
+                                            <div class="product_tools clearfix">
+                                                <div class="product_prices clearfix">
+                                                <span class="actual_price">
+                                                    $250.00
+                                                </span>
+                                                <span class="old_price">
+                                                    $325.00
+                                                </span>
+                                                </div>
+                                                <div class="button_set">
+                                                    <button class="add_comparison"><i class="fa fa-exchange" aria-hidden="true"></i></button>
+                                                    <button class="add_wishlist"><i class="fa fa-heart" aria-hidden="true"></i></button>
+                                                    <button class="add_cart"><i class="fa fa-cart-plus" aria-hidden="true"></i></button>
+                                                </div>
+                                            </div>
+                                         </div>
+                                   </div>   
+                               </div> 
+                            </div>
+                       </div>
+                       <!-- //**Хиты продаж** -->
+                       
+                       
+                       <!-- **Акционные товары** -->
+                       <div class="c_slider_second c_sliders clearfix">
+                           <span class="cs_name">Featured Products</span>
+
+                           <div class="c_slider_inner clearfix">  
+                              <div class="cs_prod_wrapper">
+                                  <div class="special_img_box">
+                                       <img src="images/SliderSale.png" alt="image" class="special_image"/> 
+                                       <div class="cs_products">
+                                            <div class="product_image">
+                                                <a href="#"><img src="images/ProductsSlider2/Prd5.png" alt="Product image here" class="cs_product_images"/></a>
+                                            </div>   
+                                            <a href="#"><span class="cs_product_names">
+                                                Air Wick Scented Oil Warmer
+                                            </span></a>
+                                            <div class="product_tools clearfix">
+                                                <div class="product_prices clearfix">
+                                                <span class="actual_price">
+                                                    $250.00
+                                                </span>
+                                                <span class="old_price">
+                                                    $325.00
+                                                </span>
+                                                </div>
+                                                <div class="button_set">
+                                                    <button class="add_comparison"><i class="fa fa-exchange" aria-hidden="true"></i></button>
+                                                    <button class="add_wishlist"><i class="fa fa-heart" aria-hidden="true"></i></button>
+                                                    <button class="add_cart"><i class="fa fa-cart-plus" aria-hidden="true"></i></button>
+                                                </div>
+                                            </div>
+                                       </div>
+                                    </div>
+                               </div> 
+                               <div class="cs_prod_wrapper"> 
+                                   <div class="cs_products">
+                                        <img src="images/SliderSale.png" alt="image" class="special_image no_special_image"/>
+                                        <div class="product_image">
+                                            <a href="#"><img src="images/ProductsSlider2/Prd6.png" alt="Product image here" class="cs_product_images"/></a>
+                                        </div>   
+                                        <a href="#"><span class="cs_product_names">
+                                            Freshmatic Ultra Automatic Spray Starter Kit
+                                        </span></a>
+                                        <div class="product_tools clearfix">
+                                            <div class="product_prices clearfix">
+                                            <span class="actual_price no_old_actual">
+                                                $177.00
+                                            </span>
+                                            <span class="old_price no_old">
+                                                $725.00
+                                            </span>
+                                            </div>
+                                            <div class="button_set">
+                                                <button class="add_comparison"><i class="fa fa-exchange" aria-hidden="true"></i></button>
+                                                <button class="add_wishlist"><i class="fa fa-heart" aria-hidden="true"></i></button>
+                                                <button class="add_cart"><i class="fa fa-cart-plus" aria-hidden="true"></i></button>
+                                            </div>
+                                        </div>
+                                   </div>
+                               </div> 
+                               <div class="cs_prod_wrapper">
+                                   <div class="special_img_box">
+                                       <img src="images/SliderSale.png" alt="image" class="special_image"/> 
+                                       <div class="cs_products">
+                                            <div class="product_image">
+                                                <a href="#"><img src="images/ProductsSlider2/Prd7.png" alt="Product image here" class="cs_product_images"/></a>
+                                            </div>   
+                                            <a href="#"><span class="cs_product_names">
+                                                Home Luminary Refills Anjou Pear Spice
+                                            </span></a>
+                                            <div class="product_tools clearfix">
+                                                <div class="product_prices clearfix">
+                                                <span class="actual_price">
+                                                    $143.00
+                                                </span>
+                                                <span class="old_price">
+                                                    $250.00
+                                                </span>
+                                                </div>
+                                                <div class="button_set">
+                                                    <button class="add_comparison"><i class="fa fa-exchange" aria-hidden="true"></i></button>
+                                                    <button class="add_wishlist"><i class="fa fa-heart" aria-hidden="true"></i></button>
+                                                    <button class="add_cart"><i class="fa fa-cart-plus" aria-hidden="true"></i></button>
+                                                </div>
+                                            </div>
+                                       </div>
+                                    </div>
+                               </div> 
+                               <div class="cs_prod_wrapper"> 
+                                   <div class="cs_products">
+                                        <img src="images/SliderSale.png" alt="image" class="special_image no_special_image"/>
+                                        <div class="product_image">
+                                            <a href="#"><img src="images/ProductsSlider2/Prd8.png" alt="Product image here" class="cs_product_images"/></a>
+                                        </div>   
+                                        <a href="#"><span class="cs_product_names">
+                                            Paddywax Fragrance Diffuser Set, Gardenia Tuberose
+                                        </span></a>
+                                        <div class="product_tools clearfix">
+                                            <div class="product_prices clearfix">
+                                            <span class="actual_price no_old_actual">
+                                                $173.00
+                                            </span>
+                                            <span class="old_price no_old">
+                                                $725.00
+                                            </span>
+                                            </div>
+                                            <div class="button_set">
+                                                <button class="add_comparison"><i class="fa fa-exchange" aria-hidden="true"></i></button>
+                                                <button class="add_wishlist"><i class="fa fa-heart" aria-hidden="true"></i></button>
+                                                <button class="add_cart"><i class="fa fa-cart-plus" aria-hidden="true"></i></button>
+                                            </div>
+                                        </div>
+                                   </div>
+                               </div> 
+                               <div class="cs_prod_wrapper">
+                                   <div class="special_img_box">
+                                       <img src="images/SliderSale.png" alt="image" class="special_image"/> 
+                                       <div class="cs_products">
+                                            <div class="product_image">
+                                                <a href="#"><img src="images/ProductsSlider1/Prd1.png" alt="Product image here" class="cs_product_images"/></a>
+                                            </div>   
+                                            <a href="#"><span class="cs_product_names">
+                                                Febreze Air Effects New Zealand Springs
+                                            </span></a>
+                                            <div class="product_tools clearfix">
+                                                <div class="product_prices clearfix">
+                                                <span class="actual_price">
+                                                    $550.00
+                                                </span>
+                                                <span class="old_price">
+                                                    $725.00
+                                                </span>
+                                                </div>
+                                                <div class="button_set">
+                                                    <button class="add_comparison"><i class="fa fa-exchange" aria-hidden="true"></i></button>
+                                                    <button class="add_wishlist"><i class="fa fa-heart" aria-hidden="true"></i></button>
+                                                    <button class="add_cart"><i class="fa fa-cart-plus" aria-hidden="true"></i></button>
+                                                </div>
+                                            </div>
+                                       </div>
+                                    </div>
+                                </div> 
+                            </div>
+                       </div>
+                       <!-- //**Акционные товары** -->
+                   </div>
+                   <!--  //*Слайдеры продукции*  -->
+                   
+                <!--  *Блоки под слайдерами*  -->
+                <div class="under_cs_boxes clearfix">
+                    <div class="under_cs_aboutus">
+                        <span class="under_cs_boxes_title">About Us</span>
+                        <p class="under_cs_anno">Lorem ipsum, libero et luctus molestie, turpis mi sagittis nisl, a scelerisque leo nulla et lectus pendisse dictum posuere elit, in congue nisl varius quis lentesque a tellus eget quam varius aliquet.</p>
+                        
+                        <p class="under_cs_anno">Pellentesque tristique, libero et luctus molestie, turpis mi sagittis nisl, a scelerisque leo nulla et lectus pendisse dictum posuere elit, in congue nisl varius quis lentesque a tellus eget quam varius aliquet.</p>
+
+                        <p class="under_cs_anno">Vel lobortis gravida. Cursus in dapibus ultrices velit fusce. Felis lacus erat.</p>
+                    </div>
+                    <div class="under_cs_news">
+                        <span class="under_cs_boxes_title">News</span>
+                        <span class="news_date">3 january 2012</span>
+                        <a href="#" class="under_cs_anno_links">Fermentum parturient lacus tristique habitant nullam morbi et odio nibh mus dictum tellus erat.</a>
+                        
+                        <span class="news_date">2 january 2012</span>
+                        <a href="#" class="under_cs_anno_links">Cras ac hendrerit dui. Duis lacus ligula, luctus ac tristique eget, posuere id erat.</a>
+                        
+                        <span class="news_date">1 january 2012</span>
+                        <a href="#" class="under_cs_anno_links">Lorem ipsum, libero et luctus molestie, turpis mi sagittis nisl, a scelerisque leo nulla et lectus pendisse dictum posuere</a>
+                    </div>
+                    <div class="under_cs_newsletter">
+                        <span class="under_cs_boxes_title">Newsletter</span>
+                        <p class="under_cs_anno">Cursus in dapibus ultrices velit fusce. Felis lacus erat. Fermentum parturient lacus tristique habitant nullam morbi et odio nibh mus dictum tellus erat.</p>
+                        
+                        <div class="follow_form_box">
+                            <form action="" method="" class="search_form clearfix follow_form">
+                            <input type="text" placeholder="Enter your email address..." class="search_field follow_field"/>
+                            <button class="search_btn follow_submit"><i class="fa fa-angle-right" aria-hidden="true"></i></button>
+                            </form>
+                        </div>
+                        
+                        <div class="follow_info clearfix">
+                            <div class="follow_pic"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+                            <div class="follow_anno">
+                                <p>Vel lobortis gravida. Cursus in dapibus ultrices velit fusce. Felis 
+                                lacus erat. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--  //*Блоки под слайдерами*  -->
+                </div>
+              </div>
+            </div>
+            <!--      //КОНТЕНТ      -->
+            <div class="empty"></div>
+        </main>
+        
+        <!-- ФУТЕР -->
+        <footer>
+            <div class="container">
+               <div class="row">
+                <div class="footer_columns_box clearfix">
+                    <div class="footer_columns">
+                        <span class="footer_columns_names">Contact Us</span>
+                        <div class="our_address_box">
+                            <div class="fav_icons_box">
+                                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                            </div>
+                            <span>49 Archdale, 2B Charleston</span>
+                        </div>
+                        <div class="our_tel_box">
+                            <div class="fav_icons_box">
+                                <i class="fa fa-phone" aria-hidden="true"></i>
+                            </div>
+                            <span>+777 (100) 1234</span>
+                        </div>
+                        <div class="our_email_box">
+                            <div class="fav_icons_box">
+                                <i class="fa fa-envelope" aria-hidden="true"></i>
+                            </div>
+                            <span>mail@example.com</span>
+                        </div>
+                    </div>
+                    <div class="footer_columns">
+                        <span class="footer_columns_names">Information</span>
+                        <ul class="footer_lists">
+                            <li>
+                                <a href="#">About Us</a>
+                            </li>
+                            <li>
+                                <a href="#">Privacy Policy</a>
+                            </li>
+                            <li>
+                                <a href="#">Terms & Conditions</a>
+                            </li>
+                            <li>
+                                <a href="#">Secure payment</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer_columns">
+                        <span class="footer_columns_names">Costumer Service</span>
+                        <ul class="footer_lists">
+                            <li>
+                                <a href="#">Contact Us</a>
+                            </li>
+                            <li>
+                                <a href="#">Return</a>
+                            </li>
+                            <li>
+                                <a href="#">FAQ</a>
+                            </li>
+                            <li>
+                                <a href="#">Site Map</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer_columns">
+                        <span class="footer_columns_names">My Account</span>
+                        <ul class="footer_lists">
+                            <li>
+                                <a href="#">My Account</a>
+                            </li>
+                            <li>
+                                <a href="#">Order History</a>
+                            </li>
+                            <li>
+                                <a href="#">Wish List</a>
+                            </li>
+                            <li>
+                                <a href="#">Newsletter</a>
+                            </li>
+                        </ul>
+                    </div>
+                  </div>
+                </div>
+            </div>
+                <div class="under_footer_box clearfix">
+                   <div class="container">
+                    <div class="copyright_box">
+                        <span class="copyright">© Breeze Store Theme, 2012</span>
+                    </div>
+                    <div class="scl_ntwrks_box">
+                    <ul class="scl_ntwrks clearfix">
+                       <li><a href="#" class="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                       <li><a href="#" class="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                       <li><a href="#" class="google"><i class="ion-social-googleplus-outline" aria-hidden="true"></i></a></li>
+                    </ul>
+               </div>
+                </div>
+            </div>
+        </footer>
+        <!-- //ФУТЕР -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script src="JS/slick.min.js"></script>
+        <script>
+            $('.main_slider').slick({
+                fade: true,
+                dots: true,
+                arrows: true,
+                autoplay: true,
+                autoplaySpeed: 4000
+            });
+            $('.c_slider_inner').slick({
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                infinite: false,
+                arrows: true,
+                draggable: false,
+                responsive: [
+                {
+                    breakpoint: 993,
+                    settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    }
+                    
+                },
+                {
+                    breakpoint: 769,
+                    settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    }  
+                },
+                {
+                    breakpoint: 577,
+                    settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    }  
+                }] 
+            })
+        </script>
+        
+        <script>
+            $(document).ready(function(){
+              $('.dropdown-submenu a.drop_submenu').on("click", function(e){
+                $(this).next('ul').slideToggle("fast");
+                e.stopPropagation();
+                e.preventDefault();
+              });
+            });
+        </script>
+    </body>
+</html>
