@@ -1,0 +1,94 @@
+.header{
+  background: $header-background;
+  height: 80px;
+  .container{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    line-height: 80px;
+  }
+}
+
+.logo_img{
+  padding-top: 5px;
+  width: 200px;
+  height: 71px;
+}
+
+.burger_menu_btn_box{
+  display: none;
+}
+
+.main_menu_ul{
+  display: flex;
+  > li:not(.vacancy_li){
+    margin-right: 50px;
+    :hover{
+      @include transition(0.3s);
+      border-bottom: 1px solid $link_hover;
+    }
+  }
+}
+.main_menu_a{
+  padding: 10px 0;
+}
+
+.contacts_btn_li{
+  line-height: 80px;
+  :hover{
+    @include transition(0.3s);
+      background-color: $link_hover;
+    }
+}
+
+.contacts_btn{
+  cursor: pointer;
+  line-height: 40px;
+  padding: 0 26px;
+  border: 1px solid #FFA800;
+  font-weight: bold;
+}
+
+.vacancy_submenu,
+.news_submenu{
+  @extend %visib-hidd-posit-abs;
+  @include opacity(0);
+  @include transition(0.3s);
+  left: 0;
+  z-index: 5;
+  width: 160px;
+  height: 138px;
+  top: 80px;
+  background: $header-background;
+  > li{
+    font-size: 12px;
+    line-height: 14px;
+    padding: 6px 12px;
+    :hover{
+      border-bottom: none;
+    }
+  }
+}
+
+.vacancy_li{
+  position: relative;
+  margin-right: 50px;
+  :hover{
+    @include transition(0.3s);
+    border-bottom: 1px solid $link_hover;
+  }
+}
+
+.vacancy_li:hover > .vacancy_submenu{
+  visibility: visible;
+  @include opacity(1);
+  border: none;
+    >li{
+      border: none;
+    }
+  }
+
+
+
+
+

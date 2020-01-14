@@ -1,0 +1,28 @@
+.footer{
+  height: 95px;
+  background: $black;
+  margin-top: -95px;
+  position: relative;
+  .container{
+    padding: 23px 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.contact_info{
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  line-height: 24px;
+  justify-content: center;
+}
+
+.copyright{
+  height: auto;
+  line-height: 0;
+}
+
+.copyright_link{
+  display: inline-block;
+}

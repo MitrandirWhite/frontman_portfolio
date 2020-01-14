@@ -1,0 +1,159 @@
+%modal-visibility-in-active{
+  visibility: hidden;
+  @include transition(0.3s);
+  @include opacity(0);
+  &.active{
+    visibility: visible;
+    @include opacity(1);
+  }
+}
+
+.modal_overlay{
+  position: absolute;
+  @extend %w-h-stretch;
+  background: $modal_overlay;
+  z-index: -2;
+  @extend %modal-visibility-in-active;
+  &.active{
+    z-index: 90;
+  }
+}
+
+.modal_contacts{
+  z-index: -1;
+  position: absolute;
+  width: 600px;
+  height: 400px;
+  padding: 36px 140px 0;
+  text-align: center;
+  left: 50%;
+  top: 50%;
+  margin-top: -200px;
+  margin-left: -300px;
+  background: $modal_background;
+  font-family: $roboto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  @extend %modal-visibility-in-active;
+  &.active{
+    z-index: 100;
+  }
+}
+
+.contacts_title{
+  color: #FFEAEA;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.modal_contact_info{
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 150%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.modal_logo{
+  width: 307px;
+  height: 109px;
+  img{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.modal_close_btn{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal_close_btn::after{
+  content: "Х";
+  font-family: $roboto;
+}
+
+.modal_close_btn:hover:after{
+  color: $link_hover;
+}
+
+
+
+
+/*___Burger menu button styles___*/
+
+.burger_btn{
+  width: 60px;
+  height: 45px;
+  position: relative;
+  margin: 10px auto;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  cursor: pointer;
+  &.burger_inactive{
+    display: none;
+  }
+}
+
+.burger_btn span{
+  display: block;
+  position: absolute;
+  width: 50px;
+  height: 4px;
+  background: $white;
+  left: 0;
+  cursor: pointer;
+  @include opacity(1);
+  @include transform_rotate(0deg);
+  @include transition(.25s);
+}
+
+/* Icon 3 */
+
+#burger_btn span:nth-child(1) {
+  top: 0px;
+}
+
+#burger_btn span:nth-child(2),#burger_btn span:nth-child(3) {
+  top: 18px;
+}
+
+#burger_btn span:nth-child(4) {
+  top: 36px;
+}
+
+#burger_btn.open span:nth-child(1) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+
+#burger_btn.open span:nth-child(2) {
+  @include transform_rotate(45deg);
+}
+
+#burger_btn.open span:nth-child(3) {
+  @include transform_rotate(-45deg);
+}
+
+#burger_btn.open span:nth-child(4) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}

@@ -1,0 +1,131 @@
+/*___Fonts___*/
+@import "fonts";
+/*___//Fonts___*/
+@import "variables";
+
+
+/*___ОБЩИЕ___*/
+
+html {
+  height:100%;
+  width: 100%;
+}
+
+body {
+  font-family: $fira-sans;
+  color: $white;
+  font-size: 16px;
+  width: 100%;
+  height: 100%;
+  line-height: 1.286;
+  background: $header-background;
+  &.no_scroll{
+    overflow: hidden;
+  }
+}
+
+head, body, header {
+  @extend %zero-margin-padding;
+  width: 100%;
+}
+
+main {
+  background: $header-background;
+  overflow: hidden;
+  overflow-y: auto;
+  position: relative;
+}
+
+.container {
+  width: 1440px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+label{
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link,
+a:visited,
+a:focus{
+  color: inherit;
+}
+
+a:hover {
+  @include transition(0.3s);
+  color: $link_hover;
+}
+
+ol, ul {
+  @extend %zero-margin-padding;
+  list-style: none;
+}
+
+p {
+  @extend %zero-margin-padding;
+}
+
+p,
+span,
+div{
+  cursor: default;
+}
+
+button {
+  background: transparent;
+  font-family: $fira-sans;
+  color: $white;
+  font-size: 100%;
+  display: inline-block;
+  @extend %zero-margin-padding;
+  border: none;
+}
+
+* *, ::after, ::before {
+  box-sizing: border-box;
+}
+
+button:visited,
+button:active,
+button:focus {
+  outline: none;
+}
+
+input{
+  border: 0;
+  outline: 0;
+  background: transparent;
+  color: $white;
+}
+
+input:focus{
+  border: 0;
+  outline: 0;
+}
+/*____//ОБЩИЕ____*/
+
+
+/*____MODAL WINDOW____*/
+@import "modal_window";
+/*____//MODAL WINDOW____*/
+
+/*____HEADER____*/
+@import "header";
+/*____//HEADER____*/
+
+/*____CONTENT____*/
+@import "content";
+/*____//CONTENT____*/
+
+/*____FOOTER____*/
+@import "footer";
+/*____//FOOTER____*/
+
+/*____MEDIA QUERIES____*/
+@import "media_style";
+/*____//MEDIA QUERIES____*/

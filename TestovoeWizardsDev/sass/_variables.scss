@@ -1,0 +1,63 @@
+
+//Fonts
+$fira-sans:  Fira Sans, sans-serif;
+$roboto:  Roboto, sans-serif;
+
+//Colors
+$header-background: #222222;
+$map-background: #1F1D2A;
+$news-background: #272729;
+$black: #000000;
+$white: #ffffff;
+$modal_overlay: rgba(34, 34, 34, 0.7);
+$slide_hover: rgba(39, 39, 41, 0.8);
+$modal_background: #131313;
+$spoilers_background: #403E4A;
+$link_hover: #FFA800;
+
+//Extentions
+%zero-margin-padding{
+  margin: 0;
+  padding: 0;
+}
+
+%visib-hidd-posit-abs{
+  visibility: hidden;
+  position: absolute;
+}
+
+%w-h-stretch{
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+//Mixins
+@mixin transition($property) {
+  -webkit-transition: $property ease-in-out;
+  -o-transition: $property ease-in-out;
+  transition: $property ease-in-out;
+}
+
+@mixin transform_rotate ($property) {
+  -webkit-transform: rotate($property);
+  -moz-transform: rotate($property);
+  -o-transform: rotate($property);
+  transform: rotate($property);
+}
+
+@mixin opacity($property){
+  -webkit-opacity: $property;
+  -moz-opacity: $property;
+  -ms-opacity: $property;
+  -o-opacity: $property;
+  -khtml-opacity: $property;
+  opacity: $property;
+}
+
+
+
+
+
+

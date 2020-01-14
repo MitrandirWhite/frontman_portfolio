@@ -1,0 +1,336 @@
+//Карта
+
+.map_section{
+  background: $map-background url('../images/map-desctop 2.png') center center no-repeat;
+  height: 47.66vw;
+  padding-top: 119px;
+  padding-bottom: 65px;
+    .container{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+    }
+}
+
+.mobile_map_image_box{
+  display: none;
+}
+
+.map_inner_top,
+.map_inner_bottom{
+  height: 282px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  line-height: 19px;
+}
+
+.map_section_info_box{
+  width: 240px;
+}
+
+.info_box_title{
+  font-size: 22px;
+  margin: 15px 0;
+}
+
+.application_field_img{
+  width: 20px;
+  height: 20px;
+}
+
+//Новости
+
+.news_section{
+  background: $news-background;
+  .container{
+    padding-top: 80px;
+    padding-bottom: 85px;
+    text-align: center;
+  }
+}
+
+.news_title{
+  font-size: 40px;
+  font-weight: normal;
+  margin: 0 0 47px;
+}
+
+.news_slider{
+  max-width: 1140px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+.news_slide_inner{
+  position: relative;
+  max-width: 322px;
+  height: 100%;
+}
+
+.news_slide{
+  margin-left: 30px;
+  position: relative;
+  >.news_slide_inner:hover{
+    .news_slide_info_box{
+      @include transition(0.4s);
+      @include opacity(1);
+      text-align: left;
+      background: $slide_hover;
+      visibility: visible;
+    }
+  }
+}
+
+.news_slide_info_box{
+  @extend %visib-hidd-posit-abs;
+  @include opacity(0);
+  @extend %w-h-stretch;
+  padding: 38px 35px 32px;
+  line-height: 19px;
+}
+
+.news_slide_title{
+  font-weight: bold;
+  margin-bottom: 16px;
+  display: inline-block;
+}
+
+.news_slide_desc{
+  font-weight: 300;
+  margin-bottom: 24px;
+  width: 200px;
+}
+
+.news_slide_date{
+  display: inline-block;
+  color: $link_hover;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: bold;
+}
+
+.news_slide_link{
+  cursor: pointer;
+  position: absolute;
+  @extend %w-h-stretch;
+  :hover{
+    color: white;
+  }
+}
+
+/*___SLIDER ARROWS___*/
+
+.slick-prev,
+.slick-next{
+  position: absolute;
+  text-align: center;
+  cursor: pointer;
+  background: transparent;
+  top: 50%;
+  margin-top: -5px;
+  width: 0;
+  height: 0;
+  overflow: visible;
+}
+
+.slick-prev{
+  left: -70px;
+}
+
+.slick-prev::before,
+.slick-next::before{
+  content: "";
+}
+
+.slick-prev::after,
+.slick-next::after{
+  content: '';
+  position: absolute;
+  display: block;
+  height: 50px;
+  width: 50px;
+  background: url("../images/arrow-point-to-right1.svg") no-repeat center center;
+  background-size: 30px 50px;
+  top: 100%;
+  left: 0;
+  margin-top: -25px;
+}
+
+.slick-prev:hover:after,
+.slick-next:hover:after{
+  background: url("../images/arrow-hover-to-right2.svg") no-repeat center center;
+  background-size: 30px 50px;
+}
+
+.slick-next{
+  right: -25px;
+  color: #ffffff;
+}
+.slick-next::after{
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+/*___//SLIDER ARROWS___*/
+
+.application_section{
+  background: $header-background;
+  .container{
+    text-align: center;
+    padding: 80px 0 65px;
+  }
+}
+
+.application_title{
+  @extend %zero-margin-padding;
+  margin-bottom: 55px;
+  font-size: 40px;
+  font-weight: normal;
+  span{
+    color: $link_hover;
+  }
+}
+
+.application_form{
+  margin: 0 auto;
+  width: 1050px;
+  display: flex;
+  justify-content: space-between;
+  flex: 1 45%;
+  flex-wrap: wrap;
+  > div{
+    width: 450px;
+  }
+}
+
+.application_left_inner{
+  margin-right: 150px;
+}
+
+.application_field{
+  width: 450px;
+  height: 85px;
+  line-height: 85px;
+  display: flex;
+  background: $modal_background;
+  padding: 16px 14px;
+  margin-bottom: 50px;
+  position: relative;
+  img{
+    margin: auto 18px auto 0;
+    width: 40px;
+    height: 40px;
+  }
+  .tel_img{
+    width: 36.6px;
+  }
+  input{
+    width: 100%;
+    height: 100%;
+    font-size: 30px;
+    line-height: 36px;
+  }
+  ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgba(255, 255, 255, 0.5);
+    opacity: 1; /* Firefox */
+  }
+
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: rgba(255, 255, 255, 0.5);
+  }
+  :-webkit-autofill {
+    outline: none;
+    -webkit-box-shadow: inset 0 0 0 50px $modal_background !important; /* Цвет фона */
+    -webkit-text-fill-color: $white !important; /* цвет текста */
+    color: $white !important; /* цвет текста */
+    font-size: 30px;
+  }
+}
+
+.invalid_message{
+  visibility: hidden;
+  position: absolute;
+  top: -16px;
+  left: 15px;
+  font-family: $fira-sans;
+  @include opacity(0);
+  @include transition(0.3s);
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 14px;
+  color: #FF0000;;
+}
+
+.invalid{
+  border: 1px solid #FF0000;
+  .invalid_message{
+    visibility: visible;
+    @include opacity(1);
+  }
+}
+
+.cv_label{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  input{
+    position: absolute;
+    z-index: -1;
+    @include opacity(0);
+    top: 0;
+    left: 0;
+  }
+}
+
+.cv_label{
+  cursor: pointer;
+  font-size: 30px;
+  line-height: 53px;
+  color: rgba(255, 255, 255, 0.5);
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.application_submit_box{
+  margin: 0 auto;
+  :hover{
+    @include transition(0.5s);
+    background: $link_hover;
+    color: $black;
+  }
+}
+
+.application_input{
+  outline: none !important;
+  border: none !important;
+}
+
+.application_submit{
+  width: 398px;
+  height: 85px;
+  border: 1px solid $link_hover;
+  background: $modal_background;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 36px;
+  cursor: pointer;
+}
+
+.empty {
+  height: 95px;
+}
+
+
