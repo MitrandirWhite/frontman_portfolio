@@ -980,7 +980,9 @@ input:focus {
       -ms-opacity: 1;
       -o-opacity: 1;
       -khtml-opacity: 1;
-      opacity: 1; }
+      opacity: 1;
+      -webkit-box-shadow: 1px 0px 10px rgba(0, 0, 0, 0.831372549);
+              box-shadow: 1px 0px 10px rgba(0, 0, 0, 0.831372549); }
     .main_menu_ul > li:not(.vacancy_li), .main_menu_ul .main_menu_li {
       margin: 0; }
 

@@ -236,6 +236,7 @@
       display: block;
       visibility: visible;
       @include opacity(1);
+      box-shadow: 1px 0px 10px rgba(0, 0, 0, 0.8313725490196079);
     }
     > li:not(.vacancy_li), .main_menu_li{
       margin: 0;
